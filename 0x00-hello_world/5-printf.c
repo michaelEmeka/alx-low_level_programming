@@ -3,11 +3,12 @@
 /**
  * main - Entry point
  *
- * Description: using the main, printf function
- * the program prints "with proper grammar, but the outcome is a piece of art,"
+ * Description: using the main function
+ * this prints "with proper grammar, but the outcome is a piece of art,"
  * Return:0
  */
 int main(void)
 {
-	printf("with proper grammar, but the outcome is a piece of art,");
+	printf("with proper grammar, but the outcome is a piece of art,\n");
+	return (0);
 }
