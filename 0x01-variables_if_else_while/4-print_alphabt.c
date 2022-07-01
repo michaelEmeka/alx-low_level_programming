@@ -12,10 +12,14 @@ int main(void)
 	a = 'a';
 	for (i = 0; i < 26; i++)
 	{
-		if (a != 'q' && a != 'e')
-			putchar(a);
-		else
+		if (a == 'q' && a == 'e')
+		{
 			continue;
+		}
+		else
+		{
+			putchar(a);
+		}
 		a++;
 	}
 	putchar('\n');
