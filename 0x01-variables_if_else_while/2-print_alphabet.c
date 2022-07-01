@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int a, i
+	int a, i;
 
 	a = 'a';
 	for (i = 0; i < 26; i++)
