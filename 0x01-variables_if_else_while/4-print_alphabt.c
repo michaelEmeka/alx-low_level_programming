@@ -12,7 +12,7 @@ int main(void)
 	a = 'a';
 	for (i = 0; i < 26; i++)
 	{
-		if (a == 'q' && a == 'e')
+		if (a == 'q' || a == 'e')
 		{
 			continue;
 		}
