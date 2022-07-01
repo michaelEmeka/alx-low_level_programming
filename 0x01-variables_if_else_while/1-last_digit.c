@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <stdio.h>
 #include <time.h>
 /**
  * main - main block
@@ -7,7 +7,8 @@
  */
 int main(void)
 {
-	int n, lD = n % 10;
+	int n;
+        int lD = n % 10;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
