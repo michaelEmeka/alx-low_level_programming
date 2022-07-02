@@ -16,7 +16,7 @@ int main(void)
 		putchar(' ');
 		n++;
 	}
-	putchar(58);
+	putchar(57);
 
 	return (0);
 }
