@@ -7,17 +7,19 @@
  */
 int main(void)
 {
-	int n = 0;
-	int c = 0;
+	int n, c;
 
 	for (n = 0; n < 10; n++)
 	{
-		for (c = n + 1; c < 10; n++)
+		for (c = 1 + n; c < 10; n++)
 		{
 			putchar(48 + n);
 			putchar(48 + c);
-			putchar(',');
-			putchar(' ');
+			if (n != 8)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
