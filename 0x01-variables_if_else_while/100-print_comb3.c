@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - this program prints all combinations of two digits
@@ -12,7 +11,7 @@ int main(void)
 
 	for (n = 0; n < 10; n++)
 	{
-		for (c = 1 + n; c < 10; n++)
+		for (c = 1 + n; c < 10; c++)
 		{
 			putchar(48 + n);
 			putchar(48 + c);
