@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - main block
- * Description: This program a-z using function
+ * print_alphabet - main block
+ * Description: This program a-z using print_alphabet function
  * Return: Always 0
  */
 void print_alphabet(void)
