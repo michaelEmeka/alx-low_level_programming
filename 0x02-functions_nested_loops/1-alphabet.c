@@ -2,7 +2,7 @@
 
 /**
  * main - main block
- *
+ * Description: This program a-z using function
  * Return: Always 0
  */
 void print_alphabet(void)
