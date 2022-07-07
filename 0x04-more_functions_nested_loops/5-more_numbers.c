@@ -3,7 +3,7 @@
 /**
  * more_numbers - main funcetion
  * Description: This program prints numbers 0-14 10 times
- * Return: nil
+ * Return: nothing
  */
 void more_numbers(void)
 {
