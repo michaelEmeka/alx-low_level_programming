@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * mul _ main function
+ * mul - main function
  * @a: first parameter
  * @b: second parameter
  * Description: this program multiplies two numbers
