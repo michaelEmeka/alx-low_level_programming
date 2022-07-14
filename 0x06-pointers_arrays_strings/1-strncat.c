@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * *strncat - main function
+ * *_strncat - main function
  * @dest: first argument
  * @src: second arg
  * @n: nbytes argument
  * Return: 0 always
  */
-char *strncat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int a = 0, b = 0;
 
