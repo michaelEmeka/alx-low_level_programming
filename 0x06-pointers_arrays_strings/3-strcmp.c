@@ -3,8 +3,8 @@
 /**
  * _strcmp - this function compares two strings
  * and returns a value
- * @*s1: left string parameter
- * @*s2: right string parameter
+ * @s1: left string parameter
+ * @s2: right string parameter
  * Return: always 0
  */
 int _strcmp(char *s1, char *s2)
