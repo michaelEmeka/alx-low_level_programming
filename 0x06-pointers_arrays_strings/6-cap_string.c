@@ -11,7 +11,7 @@ char *cap_string(char *str)
 
 	while (str[i] != '\0')
 	{
-		if (i == 0 || str[i] == ' ')
+		if (i == 0 || str[i] == ' ' || str[i] == '.' || str[i] == 9 || str[i] == 10)
 		{
 			if (i == 0)
 			{
