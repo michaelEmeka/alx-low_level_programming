@@ -7,7 +7,7 @@
  */
 char *leet(char *str)
 {
-	int a = 0, i;
+	int a = 0, i = 0;
 	char key[5] = {'a', 'e', 'o', 't', 'l'};
 	char val[5] = {4, 3, 0, 7, 1};
 
@@ -21,6 +21,7 @@ char *leet(char *str)
 			}
 			i++;
 		}
+		i = 0;
 		a++;
 	}
 	return (str);
