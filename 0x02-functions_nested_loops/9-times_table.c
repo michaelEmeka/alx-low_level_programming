@@ -6,7 +6,7 @@
  */
 void times_table(void)
 {
-	int x, y, product, unit, tens;
+	int x, y, p, units, tens;
 
 	for (x = 0; x < 10; x++)
 	{
