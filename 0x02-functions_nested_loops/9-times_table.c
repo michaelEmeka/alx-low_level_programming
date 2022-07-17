@@ -14,7 +14,7 @@ void times_table(void)
 		{
 			p = x * y;
 			units = p % 10;
-			tens = (p - u) / 10;
+			tens = (p - units) / 10;
 			if (p < 10)
 			{
 				_putchar('0' +  p);
