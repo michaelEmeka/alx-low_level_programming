@@ -6,21 +6,28 @@
  */
 void times_table(void)
 {
-	int x, y;
+	int x, y, product, unit, tens;
 
 	for (x = 0; x < 10; x++)
 	{
 		for (y = 0; y < 10; y++)
 		{
-			if (y != 9)
+			p = x * y;
+			units = p % 10;
+			tens = (p - u) / 10;
+			if (p < 10)
 			{
-				_putchar('0' + (x * y));
-				_putchar(',');
-				_putchar(' ');
+				_putchar('0' +  p);
 			}
 			else
 			{
-				_putchar('0' + (x * y));
+				_putchar('0' + tens);
+				_putchar('0' + units);
+			}
+			if (y != 9)
+			{
+				_putchar(',');
+				_putchar(' ');
 			}
 		}
 		_putchar('\n');
