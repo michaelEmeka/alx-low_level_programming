@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print _diagonal - main function
+ * print_diagonal - main function
  * @n: this is the function's argument
  * Description: this program draws a diagonal line on the terminal
  * Return: nil
