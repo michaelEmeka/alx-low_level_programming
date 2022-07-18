@@ -7,23 +7,22 @@
  */
 void print_to_98(int n)
 {
-	int units, tens;
-
-	while (n < 99)
+	if (n < 98)
 	{
-		units = n % 10;
-		tens = (n - units) / 10;
-		if (n > 10)
+		while (n < 98)
 		{
-			_putchar('0' + tens);
+			printf("%d, ", n);
+			printf("%d,\n", 98);
+			n++;
 		}
-		_putchar('0' + units);
-		if (n != 98)
-		{
-			_putchar(',');
-			_putchar(' ');
-		}
-		n++;
 	}
-	_putchar('\n');
+	else
+	{
+		while (n > 98)
+		{
+			printf("%d, ", n);
+			printf("%d\n", 98);
+			n--;
+		}
+	}
 }
