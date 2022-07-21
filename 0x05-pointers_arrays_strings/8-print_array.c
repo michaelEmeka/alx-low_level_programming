@@ -18,7 +18,10 @@ void print_array(int *a, int n)
 			_putchar(',');
 			_putchar(' ');
 		}
-		_putchar(a[i]);
+		if (a[i] < 0)
+		{
+	
+			_putchar(a[i] % 10);
 		i++;
 	}
 	_putchar('\n');
