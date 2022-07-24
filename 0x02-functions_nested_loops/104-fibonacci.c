@@ -11,12 +11,12 @@ int main(void)
         printf("%ld, %ld", a, b);
         while (i < 96)
         {
-                nxtn = a + b;
-                printf(", %ld", nxtn);
-                a = b;
-                b = nxtn;
-                i++;
-        }
-        putchar('\n');
-        return (0);
+		nxtn = a + b;
+		printf(", %ld", nxtn);
+		a = b;
+		b = nxtn;
+		i++;
+	}
+	putchar('\n');
+	return (0);
 }
