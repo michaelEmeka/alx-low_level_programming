@@ -10,7 +10,7 @@ void print_times_table(int n)
 {
 	int i = 0, j = 0, p;
 
-	if (n > 0 && n <= 15)
+	if (n >= 0 && n <= 15)
 	{
 		while (i <= n)
 		{
@@ -25,6 +25,7 @@ void print_times_table(int n)
 				printf("%d", p);
 				j++;
 			}
+			j = 0;
 			i++;
 		}
 		_putchar('\n');
