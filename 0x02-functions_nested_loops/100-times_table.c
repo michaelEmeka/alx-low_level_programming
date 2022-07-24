@@ -19,10 +19,12 @@ void print_times_table(int n)
 				p = i * j;
 				if (j != 0)
 				{
-					_putchar(',');
-					_putchar(' ');
+					printf(", %d", p);
 				}
-				printf("%d", p);
+				else
+				{
+					printf("%d", p);
+				}
 				j++;
 			}
 			j = 0;
