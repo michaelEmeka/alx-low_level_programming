@@ -6,7 +6,6 @@
  */
 int main(void)
 {
-	//1 2 3 5 8 13 21
 	int i = 0, a = 1, b = 2, nxtn;
 
 	printf("%d, %d", a, b);
