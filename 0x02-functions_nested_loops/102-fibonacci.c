@@ -8,11 +8,11 @@ int main(void)
 {
 	long int i = 0, a = 1, b = 2, nxtn;
 
-	printf("%d, %d", a, b);
+	printf("%ld, %ld", a, b);
 	while (i < 48)
 	{
 		nxtn = a + b;
-		printf(", %d", nxtn);
+		printf(", %ld", nxtn);
 		a = b;
 		b = nxtn;
 		i++;
