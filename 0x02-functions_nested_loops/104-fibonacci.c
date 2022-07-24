@@ -6,11 +6,11 @@
  */
 int main(void)
 {
-        long int i = 0, a = 1, b = 2, nxtn;
+	unsigned long i = 0, a = 1, b = 2, nxtn, changer;
 
-        printf("%ld, %ld", a, b);
-        while (i < 96)
-        {
+	printf("%ld, %ld", a, b);
+	while (i < 96)
+	{
 		nxtn = a + b;
 		printf(", %ld", nxtn);
 		a = b;
