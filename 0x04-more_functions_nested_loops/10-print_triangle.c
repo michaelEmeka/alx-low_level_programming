@@ -5,7 +5,7 @@
  * @size: argument
  * Return: 0
  */
-void print_number(int n)
+void print_triangle(int n)
 {
 	int i = 1, s = 0, c = 0;
 
