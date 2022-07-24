@@ -8,7 +8,7 @@ int main(void)
 {
 	long int a = 1, b = 2, nxtn = 0, sum = 0;
 
-	sum +=b;
+	sum += b;
 	while (nxtn <= 4000000)
 	{
 		nxtn = a + b;
@@ -19,6 +19,7 @@ int main(void)
 			sum += nxtn;
 		}
 	}
+	printf("%ld", sum);
 	putchar('\n');
 	return (0);
 }
