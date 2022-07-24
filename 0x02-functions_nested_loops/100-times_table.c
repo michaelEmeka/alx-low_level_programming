@@ -19,7 +19,7 @@ void print_times_table(int n)
 				p = i * j;
 				if (j != 0)
 				{
-					printf(", %d", p);
+					printf(",  %d", p);
 				}
 				else
 				{
@@ -29,7 +29,7 @@ void print_times_table(int n)
 			}
 			j = 0;
 			i++;
+			printf("\n");
 		}
-		_putchar('\n');
 	}
 }
