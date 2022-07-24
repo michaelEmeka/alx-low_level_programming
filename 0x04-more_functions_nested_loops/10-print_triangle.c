@@ -2,7 +2,7 @@
 
 /**
  * print_triangle - this function prints a triangle
- * @size: argument
+ * @n: argument
  * Return: 0
  */
 void print_triangle(int n)
@@ -28,7 +28,6 @@ void print_triangle(int n)
 			_putchar('\n');
 			i++;
 		}
-		
 	}
 	else
 	{
