@@ -21,7 +21,7 @@ void print_times_table(int n)
 				{
 					_putchar(',');
 					_putchar(' ');
-					printf("%d");
+					printf("%d", p);
 				}
 				else
 				{
@@ -31,5 +31,6 @@ void print_times_table(int n)
 			}
 			i++;
 		}
+		_putchar('\n');
 	}
 }
