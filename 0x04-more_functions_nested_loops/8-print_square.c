@@ -22,7 +22,6 @@ void print_square(int size)
 			w = 0;
 			_putchar('\n');
 			h++;
-		
 		}
 	}
 	else
