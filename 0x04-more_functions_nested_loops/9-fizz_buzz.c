@@ -28,6 +28,6 @@ int main(void)
 		}
 		i++;
 	}
-	printf("%d\n", "Buzz");
+	printf("%s\n", "Buzz");
 	return (0);
 }
