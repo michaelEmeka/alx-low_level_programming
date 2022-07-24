@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	unsigned long i = 0, a = 1, b = 2, nxtn, changer;
+	unsigned long i = 0, a = 1, b = 2, nxtn;
 
 	printf("%ld, %ld", a, b);
 	while (i < 96)
