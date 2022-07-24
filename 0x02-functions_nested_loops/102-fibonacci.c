@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int i = 0, a = 1, b = 2, nxtn;
+	long int i = 0, a = 1, b = 2, nxtn;
 
 	printf("%d, %d", a, b);
 	while (i < 48)
