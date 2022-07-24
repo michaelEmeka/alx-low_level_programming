@@ -17,9 +17,17 @@ void print_times_table(int n)
 			while (j <= n)
 			{
 				p = i * j;
-				if (j != 0)
+				if (p < 10 && j != 0)
+				{
+					printf(",   %d", p);
+				}
+				else if (p > 9 && p < 100)
 				{
 					printf(",  %d", p);
+				}
+				else if (p > 99 && p < 1000)
+				{
+					printf(", %d", p);
 				}
 				else
 				{
