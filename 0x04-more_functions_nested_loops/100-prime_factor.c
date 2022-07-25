@@ -6,28 +6,20 @@
  */
 int main(void)
 {
-	long int num = 612852475143, i = 2, p = 1, c = 0;
+	long int num = 612852475143, i = 2;
 
 	while (i < num)
 	{
 		if (num % i == 0)
 		{
-			while (p <= i)
-			{
-				if (p % i == 0)
-				{
-					c++;
-				}
-				p++;
-			}
-			if (c == 2)
-			{
-				printf("%ld", i);
-			}
+			num /= i;
+			p = i;
 		}
-		p = 1;
-		c = 0;
-		i++;
+		else
+		{
+			i++;
+		}
 	}
+	printf("%ld\n", i);
 	return (0);
 }
