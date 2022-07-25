@@ -20,6 +20,6 @@ int main(void)
 			i++;
 		}
 	}
-	printf("%ld\n", i);
+	printf("%ld\n", p);
 	return (0);
 }
