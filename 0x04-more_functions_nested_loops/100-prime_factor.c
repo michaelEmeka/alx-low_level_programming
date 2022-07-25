@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-	long int num = 612852475143, i = 2, p = 0;
+	long long int num = 612852475143, i = 2, p = 0;
 
-	while (i < num)
+	while (i <= num)
 	{
 		if (num % i == 0)
 		{
@@ -20,6 +20,6 @@ int main(void)
 			i++;
 		}
 	}
-	printf("%ld\n", p);
+	printf("%lld\n", p);
 	return (0);
 }
