@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	long long int num = 612852475143, i = 2, p = 1, c = 0;
+	long int num = 612852475143, i = 2, p = 1, c = 0;
 
 	while (i < num)
 	{
@@ -22,7 +22,7 @@ int main(void)
 			}
 			if (c == 2)
 			{
-				printf("%lld");
+				printf("%ld");
 			}
 		}
 		p = 1;
