@@ -22,7 +22,7 @@ int main(void)
 			}
 			if (c == 2)
 			{
-				printf("%ld");
+				printf("%ld", i);
 			}
 		}
 		p = 1;
