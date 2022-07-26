@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - this programm adds positive numbers 
@@ -13,9 +14,9 @@ int main(int argc, char **argv)
 
 	if (argc > 1)
 	{
-		while(--argc)
-		{	
-			if (!(atoi(*++argv)))
+		while (--argc)
+		{
+			if (isalpha(**++argv))
 			{
 				printf("%s\n", "Error");
 				return (1);
