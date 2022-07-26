@@ -15,8 +15,7 @@ void print_array(int *a, int n)
 	{
 		if (i > 0)
 		{
-			_putchar(',');
-			_putchar(' ');
+			printf(", ");
 		}
 		printf("%d", a[i]);
 		i++;
