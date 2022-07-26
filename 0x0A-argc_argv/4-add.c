@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 /**
- * main - this programm adds positive numbers 
+ * main - this program adds positive numbers
  * @argc: argument counter
  * @argv: argument vector
  * Return: 0
@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 				printf("%s\n", "Error");
 				return (1);
 			}
-			else
+			else if (atoi(*argv) > 0)
 			{
 				sum += atoi(*argv);
 			}
@@ -34,4 +34,4 @@ int main(int argc, char **argv)
 		printf("%d\n", 0);
 		return (0);
 	}
-}	
+}
