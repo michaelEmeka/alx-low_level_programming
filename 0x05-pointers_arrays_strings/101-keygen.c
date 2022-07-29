@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctime.h>
+#include <time.h>
 
 /**
  * main - main function
