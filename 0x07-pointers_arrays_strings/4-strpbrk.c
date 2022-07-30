@@ -7,7 +7,7 @@
  * @accept: search key
  * Return: pointer to first appearance
  */
-char _strpbrk(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	int i, a;
 
