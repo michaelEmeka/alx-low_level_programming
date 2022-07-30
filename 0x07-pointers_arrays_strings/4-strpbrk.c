@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _strspn - this function returns the number of bytes in the
- * initial segment of *s that contains *accept
+ * _strpbrk - this function returns a pointer
+ * to the first occurence of a character from *accept in *s
  * @s: reference string pointer
  * @accept: search key
  * Return: pointer to first appearance
@@ -16,14 +16,13 @@ char *_strpbrk(char *s, char *accept)
 	{
 		while (accept[a] != '\0')
 		{
-			if (s[i] == accept[a])
+			if (*s == accept[a])
 			{
 				return (s);
 			}
 			a++;
 		}
 		a = 0;
-		i++;
 		s++;
 	}
 	return (NULL);
