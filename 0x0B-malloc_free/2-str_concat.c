@@ -9,7 +9,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int size = 0, i = 0, j = 0;
+	int size = 0, i = 0;
 	char *p;
 
 	if (*s1 != '\0')
@@ -37,14 +37,13 @@ char *str_concat(char *s1, char *s2)
 	}
 	while (i < size)
 	{
-		if (s1[i] != '\0')
+		if (*s1 != '\0')
 		{
-			p[i] = s1[i];
+			p[i] = *s1++;
 		}
-		else if (s2[j] != '\0')
+		else if (*s1 == '\0' && *s2 != '\0')
 		{
-			p[i] = s2[j];
-			j++;
+			p[i] = *s2++;
 		}
 		i++;
 	}
