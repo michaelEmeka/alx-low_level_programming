@@ -42,7 +42,7 @@ char *str_concat(char *s1, char *s2)
 		{
 			p[i] = s1[i];
 		}
-		else if (s1[i] == '\0' && s2[j] != '\0')
+		else if (s2[j] != '\0')
 		{
 			p[i] = s2[j];
 			j++;
