@@ -10,7 +10,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	int size = 0, i = 0, j = 0;
-	char *p = NULL;
+	char *p;
 
 	if (*s1 != '\0')
 	{
@@ -30,7 +30,7 @@ char *str_concat(char *s1, char *s2)
 		}
 		i = 0;
 	}
-	p = malloc((sizeof(*p) * size) + i);
+	p = malloc((sizeof(*p) * size) + 1);
 	if (p == NULL)
 	{
 		return (NULL);
