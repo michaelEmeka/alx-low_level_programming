@@ -1,9 +1,10 @@
 #include <stdlib.h>
 #include "dog.h"
+
 /**
  * init_dog - this function initializes the struct dog
- * struct dog - this is the dog structure
- * @d - a pointer to an instance of the dog structure
+ * struct dog *d- this is the dog structure
+ * Description - a pointer to an instance of the dog structure
  * @name: name parameter
  * @age: age parameter
  * @owner: owner parameter
