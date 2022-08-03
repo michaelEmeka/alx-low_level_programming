@@ -14,18 +14,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *d;
 	int Ln, Lo, i;
 
-	//allocates memory for d
 	d = (dog_t *)malloc(sizeof(dog_t));
-	//checks if allocation was successful
 	if (d == NULL)
 		return (NULL);
 	Ln = Lo = 0;
-	//get length of name and owner pointers
 	while (name[Ln++])
 		;
 	while (owner[Lo++])
 		;
-	//allocates memory for name and owner elements
 	d->name = malloc(sizeof(d->name) * Ln);
 	if (d->name == NULL)
 	{
