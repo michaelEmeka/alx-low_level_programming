@@ -5,17 +5,14 @@
 /**
  * void print_name(char *name, void (*f)(char *));
  * print_name - this function prints name
- * @d: pointer to function
+ * @f: pointer to function
  * @name: name parameter
  * Return: 0
  */
 void print_name(char *name, void (*f)(char *))
 {
-	if (name != NULL)
+	if (name != NULL && f != NULL)
 	{
 		(*f)(name);
-	}
-	else
-	{
 	}
 }
