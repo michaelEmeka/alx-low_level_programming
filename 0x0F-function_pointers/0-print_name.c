@@ -3,7 +3,6 @@
 #include  "function_pointers.h"
 
 /**
- * void print_name(char *name, void (*f)(char *));
  * print_name - this function prints name
  * @f: pointer to function
  * @name: name parameter
