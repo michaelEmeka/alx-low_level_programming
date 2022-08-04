@@ -18,15 +18,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_start(num, n);
 	for (i = 0; i < n; i++)
 	{
-		switch (i)
-		{
-			case 0:
-				printf("%d", va_arg(num, int));
-				break;
-			default:
-				printf("%s%d", separator, va_arg(num, int));
-				break;
-		}
+		if (i > 0)
+			printf("%s", separator);
+		printf("%d", va_arg(num, int));
 	}
 	va_end(num);
 }
