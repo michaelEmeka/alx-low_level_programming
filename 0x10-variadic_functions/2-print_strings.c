@@ -11,20 +11,21 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
+	char *ptr;
 
 	va_list = str;
 	
 	va_start(str,n);
 	for (i = 0; i < n; i++)
 	{
+		ptr = va_arg(str, char *);
 		if (i > 0 && separator != NULL)
 			printf("%s", separator);
-		if (va_arg(str, char *) != NULL)
-			printf("%s" va_arg(str,char *));
+		if (ptr != NULL)
+			printf("%s", ptr);
 		else
 			printf("(nil)");
 	}
 	va_end(str);
 	printf("\n");
 }
-
