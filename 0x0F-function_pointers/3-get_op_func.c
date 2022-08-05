@@ -1,7 +1,7 @@
 #include "3-calc.h"
+#include <stdlib.h>
 
 /**
- * int (*get_op_func(char *s))(int, int);
  * get_op_func - this function receives the desired operator
  * @s: symbol argument
  * Return: calculation
@@ -16,14 +16,13 @@ int (*get_op_func(char *s))(int a, int b)
 	{"%", op_mod},
 	{NULL, NULL}
 	};
-	int i;
+	int i = 0;
 
-	i = 0;
-	while (i < 6)
+	while (i < 5)
 	{
-		if (*s == ops[i].op)
+		if (*s == *(ops[i]).op)
 		{
-			return (ops[i].(*f)(a, b));
+			return (ops[i].f);
 		}
 		i++;
 	}
