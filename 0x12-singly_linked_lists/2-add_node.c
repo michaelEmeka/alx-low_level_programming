@@ -2,7 +2,7 @@
 
 /**
  * @add_node - adds a new node to the beginning of the list
- * @head: a poimter to the frst on the list
+ * @head: a poimter to the first element  on the list
  * @str: a string for the string property of the new head
  * Return: the address of the new element or NULL if failed
  */
