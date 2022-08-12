@@ -4,8 +4,8 @@
  * add_node_end - this function adds a node to the 
  * end of a linked list
  * @head: first node on the list
- * @str: string 
- * Return: an address of the new element or NULL on failure
+ * @str: string struct member
+ * Return: an address of the head
  */
 
 list_t *add_node_end(list_t **head, const char *str)
