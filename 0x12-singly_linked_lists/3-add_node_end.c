@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_node_end - this function adds a node to the 
+ * add_node_end - this function adds a node to the
  * end of a linked list
  * @head: first node on the list
  * @str: string struct member
