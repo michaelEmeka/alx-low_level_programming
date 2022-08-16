@@ -5,18 +5,20 @@
  * end of the list
  * @head: head of the list
  * @n: number property of the new node
+ * Return: pointer to the new node
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	listint_t *end;
+	listint_t *end, *temp;
 
 	end = malloc(sizeof(listint_t));
 	if (end == NULL)
 		return (NULL);
-	while (*head != NULL)
-		*head = *head->next;
-	*head = end;
 	end->n = n;
-	end->next=NULL;
+	end->next = NULL;
+	temp = *head;
+	while (temp != NULL)
+		temp = temp->next;
+	temp = end;
 	return (*head);
 }
