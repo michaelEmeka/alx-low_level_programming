@@ -1,5 +1,4 @@
 #include "lists.h"
-
 /**
  * sum_listint - this funtion gets the sum of all n's in nodes
  * @head: head node
