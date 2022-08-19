@@ -6,7 +6,7 @@
  * @b: a string of 1s amd 0s
  * Return: the unsigned denary
  */
-int getMaxPowOf2(*str)
+int getMaxPowOf2(const char *str)
 {
 	int i = 0;
 
@@ -14,7 +14,7 @@ int getMaxPowOf2(*str)
 	{
 		i++;
 	}
-	return (i - 1)
+	return (i - 1);
 }
 int getVal(int p)
 {
@@ -25,8 +25,11 @@ int getVal(int p)
 	if (p == 1)
 		val = 2;
 	while (p > 1)
-		val *= 2, p--;
-	return (val * t)
+	{
+		val *= 2;
+		p--;
+	}
+	return (val);
 }
 unsigned int binary_to_uint(const char *b)
 {
