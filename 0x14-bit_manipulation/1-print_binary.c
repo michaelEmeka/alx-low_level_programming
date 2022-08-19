@@ -7,7 +7,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	float nn = n;
+	float nn = (float) n;
 
 	if (n <= 0)
 		return;
@@ -16,11 +16,11 @@ void print_binary(unsigned long int n)
 	if (n == nn)
 	{
 		printBinary(n);
-		printf("0");
+		_putchar(0 + '0');
 	}
 	else
 	{
 		printBinary(n);
-		printf("1");
+		_putchar(1 + '0');
 	}
 }
