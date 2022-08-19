@@ -33,8 +33,7 @@ int getVal(int p)
 }
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int sum = 0;
-	int pow, temp, id;
+	unsigned int pow, temp, id = 0, sum = 0;
 
 	if (b == NULL)
 		return (0);
@@ -42,7 +41,7 @@ unsigned int binary_to_uint(const char *b)
 	while (b[id])
 	{
 		temp = b[id] - '0';
-		if (temp == 0 || temp == 1)
+		if (temp == 1)
 			sum += getVal(pow);
 		else if (temp == 0)
 			sum += 0;
