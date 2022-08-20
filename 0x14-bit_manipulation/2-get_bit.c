@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * get_bit - thsi function returns the bit at the index in a
+ * get_bit - this function returns the bit at the index in a
  * given number
  * @n: base ten number
  * @index: index of the requested bit
@@ -9,5 +9,11 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
+	int bitCounter = 0, temp = n;
+
+	while (temp >>= 1)
+		bitCounter++;
+	if (index > bitCounter)
+		return (-1);
 	return ((n >> index) & 1);
 }
