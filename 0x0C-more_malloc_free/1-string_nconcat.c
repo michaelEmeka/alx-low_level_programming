@@ -25,27 +25,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	temp = malloc(1 + N);
 	if (!temp)
 		return (NULL);
-	/*
-	while (*s1)
-	{
-		temp[i] = *s1++;
-		i++;
-	}
-	while (*s2 && n > 0)
-	{
-		temp[i] = *s2++;
-		i++, n--;
-	}*/
 	while (*s1 || (n > 0 && *s2))
 	{
-        if (*s1)
-            temp[i] = *s1++;
-        else
-        {
-            temp[i] = *s2++;
-            n--;
-        }
-        i++;
+		if (*s1)
+			temp[i] = *s1++;
+		else
+		{
+			temp[i] = *s2++;
+			n--;
+		}
+		i++;
 	}
 	temp[i] = '\0';
 	return (temp);
