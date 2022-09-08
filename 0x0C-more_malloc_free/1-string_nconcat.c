@@ -13,7 +13,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (!temp)
 		return (NULL);
-	while ((s1 && *s1 || (n > 0 && *s2))
+	while ((s1 && *s1) || (n > 0 && *s2))
 	{
 		if (*s1)
 			temp[i] = *s1++;
