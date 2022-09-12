@@ -21,7 +21,7 @@ char *argstostr(int ac, char **av)
 		str++;
 		i = 0;
 	}
-	buffSize = letterCount + ac;
+	buffSize = letterCount + ac + 1;
 	str = 0;
 	buffer = malloc(buffSize);
 	if (!buffer)
