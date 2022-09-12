@@ -31,9 +31,10 @@ char *argstostr(int ac, char **av)
 		while (av[str][i])
 		{
 			buffer[t] = av[str][i];
-			t++, i++;
+			t++;
+			i++;
 		}
-		buffer[t] = '\n';
+		buffer[t] = 'n';
 		str++;
 		i = 0;
 	}
