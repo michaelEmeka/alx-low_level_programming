@@ -10,7 +10,7 @@
 char *argstostr(int ac, char **av)
 {
 	int str = 1, i = 0, t = 0, letterCount = 0, buffSize;
-	char *buffer, *temp;
+	char *buffer;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
@@ -24,7 +24,7 @@ char *argstostr(int ac, char **av)
 	buffSize = letterCount + ac;
 	str = 1;
 	buffer = malloc(buffSize);
-	if (!Buffer)
+	if (!buffer)
 		return (NULL);
 	while (str < ac)
 	{
