@@ -34,9 +34,9 @@ char *argstostr(int ac, char **av)
 			t++;
 			i++;
 		}
-		buffer[t] = 'n';
 		str++;
 		i = 0;
+		buffer[t] = '\n';
 	}
 	buffer[t] = '\0';
 	return (buffer);
