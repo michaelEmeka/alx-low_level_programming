@@ -30,7 +30,8 @@ char *argstostr(int ac, char **av)
 	{
 		while (av[str][i])
 		{
-			buffer[t++] = av[str][i++];
+			buffer[t] = av[str][i];
+			t++, i++;
 		}
 		buffer[t] = '\n';
 		str++;
