@@ -15,8 +15,8 @@ void print_diagsum(int *a, int size)
 	i = sumL = sumR = 0;
 	while (i <= maxIdx)
 	{
-		sumL += a[i][i];
-		sumR += a[i][maxIdx - i];
+		sumL += arr[i][i];
+		sumR += arr[i][maxIdx - i];
 		i++;
 	}
 	printf("%d, %d\n", sumL, sumR);
