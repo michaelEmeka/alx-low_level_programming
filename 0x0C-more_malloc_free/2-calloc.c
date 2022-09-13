@@ -20,6 +20,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	while (i < buffSize)
 		str[i] = 0x00;
-	(void *)str;
+	(void*)str;
 	return (str);
 }
