@@ -9,7 +9,7 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *str = NULL;
+	char *str = NULL;
 	int buffSize;
 
 	if (!nmemb || !size)
@@ -18,7 +18,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	str = malloc(buffSize);
 	if (!str)
 		return (NULL);
-	(char *)str = {0x00};
+	str = {0x00};
 	(void *)str;
 	return (str);
 }
