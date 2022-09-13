@@ -9,7 +9,7 @@
  */
 void print_diagsums(int *a, int size)
 {
-	long int sumL, sumR, i, j, maxIdx = (size * size) - 1;
+	int sumL, sumR, i, j, maxIdx = (size * size) - 1;
 
 	i = sumL = sumR = 0;
 	j = size - 1;
@@ -18,7 +18,7 @@ void print_diagsums(int *a, int size)
 		sumL += a[i];
 		sumR += a[j];
 		i += maxIdx / (size - 1);
-		j += j;
+		j += size - 1;
 	}
 	printf("%ld, %ld\n", sumL, sumR);
 }
