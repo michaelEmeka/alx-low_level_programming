@@ -31,7 +31,7 @@ char **strtow(char *str)
 	{
 		if (str[i] != ' ')
 		{
-			words[j] = malloc(sizeof(char) * sizes[j]);
+			words[j] = malloc((sizeof(char) * sizes[j]) + 1);
 			while(letters < sizes[j])
 			{
 				words[j][letters] = str[i];
