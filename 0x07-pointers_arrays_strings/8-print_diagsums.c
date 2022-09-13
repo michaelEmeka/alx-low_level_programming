@@ -7,7 +7,7 @@
  * and columns).
  * Return: nothing.
  */
-void print_diagsum(int *a, int size)
+void print_diagsums(int *a, int size)
 {
 	int sumL, sumR, i, j, maxIdx = (size * size) - 1;
 
