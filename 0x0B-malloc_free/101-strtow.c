@@ -25,7 +25,7 @@ char **strtow(char *str)
 		}
 		i++;
 	}
-	words = malloc(wrd * sizeof(char *));
+	words = malloc((wrd + 1) * sizeof(char *));
 	i = 0;
 	while (str[i])
 	{
