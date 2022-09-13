@@ -18,7 +18,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	str = malloc(buffSize);
 	if (!str)
 		return (NULL);
-	while (i < buffSize)
-		str[i] = '0x00';
+	str = {0x00};
 	return (str);
 }
