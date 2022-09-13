@@ -9,15 +9,16 @@
  */
 void print_diagsum(int *a, int size)
 {
-	int **arr = (int **)a;
-	int sumL, sumR, i, maxIdx = size - 1;
+	int sumL, sumR, i, maxIdx = (size * size) - 1;
 
 	i = sumL = sumR = 0;
+	j = size - 1;
 	while (i <= maxIdx)
 	{
-		sumL += arr[i][i];
-		sumR += arr[i][maxIdx - i];
-		i++;
+		sumL += arr[i];
+		sumR += arr[j];
+		i += maxIdx / (size - 1);
+		j += j;
 	}
 	printf("%d, %d\n", sumL, sumR);
 }
