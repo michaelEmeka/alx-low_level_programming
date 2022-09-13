@@ -10,11 +10,15 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *str = NULL;
+	int buffSize, position = 0
 
 	if (!nmemb || !size)
 		return (NULL);
-	str = malloc(size * nmemb + 1);
+	buffSize = size * nmemb + 1;
+	str = malloc(buffSize);
 	if (!str)
 		return (NULL);
+	while (position < buffSize)
+		str[position++] = '0x00';
 	return (str);
 }
