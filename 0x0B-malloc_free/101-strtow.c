@@ -5,7 +5,7 @@
  * Return: an array of strings representing words extracted.
  */
 
-char **strtow(char *str);
+char **strtow(char *str)
 {
 	char **words;
 	int i = 0, sizes[100], letters = 0, wrd = 0, j = 0;
