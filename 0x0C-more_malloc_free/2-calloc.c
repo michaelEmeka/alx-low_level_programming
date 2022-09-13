@@ -10,7 +10,7 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *str = NULL;
-	int buffSize, position = 0
+	int buffSize;
 
 	if (!nmemb || !size)
 		return (NULL);
