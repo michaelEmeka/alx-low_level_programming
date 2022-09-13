@@ -9,7 +9,7 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int sumL, sumR, i, j, maxIdx = (size * size) - 1;
+	long int sumL, sumR, i, j, maxIdx = (size * size) - 1;
 
 	i = sumL = sumR = 0;
 	j = size - 1;
