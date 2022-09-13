@@ -20,5 +20,5 @@ void print_diagsums(int *a, int size)
 		i += maxIdx / (size - 1);
 		j += j;
 	}
-	printf("%d, %d\n", sumL, sumR);
+	printf("%ld, %ld\n", sumL, sumR);
 }
