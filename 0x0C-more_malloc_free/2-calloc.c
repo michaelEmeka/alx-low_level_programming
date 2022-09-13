@@ -6,6 +6,9 @@
  * @nmemb: number of elements.
  * @size: size of each element.
  * Return: array pointer.
+ * Or NULL if:
+ * -nmemb or size is 0.
+ * -malloc fails.
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
@@ -14,7 +17,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (!nmemb || !size)
 		return (NULL);
-	buffSize = size * nmemb + 1;
+	buffSize = size * nmemb;
 	str = malloc(buffSize);
 	if (!str)
 		return (NULL);
