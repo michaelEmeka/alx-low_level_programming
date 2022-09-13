@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * strtow - this function divides a string into separate words.
  * @str: string literal.
@@ -9,7 +10,8 @@ char **strtow(char *str)
 {
 	char **words;
 	int i = 0, sizes[100], letters = 0, wrd = 0, j = 0;
-	if (!str)
+
+	if (str == "" || str == " " || str == NULL)
 		return (NULL);
 	while (str[i])
 	{
@@ -32,7 +34,7 @@ char **strtow(char *str)
 		if (str[i] != ' ')
 		{
 			words[j] = malloc((sizeof(char) * sizes[j]) + 1);
-			while(letters < sizes[j])
+			while (letters < sizes[j])
 			{
 				words[j][letters] = str[i];
 				letters++, i++;
