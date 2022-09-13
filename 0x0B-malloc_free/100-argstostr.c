@@ -36,7 +36,7 @@ char *argstostr(int ac, char **av)
 		}
 		str++;
 		i = 0;
-		buffer[t] = '\n';
+		buffer[t++] = '\n';
 	}
 	buffer[t] = '\0';
 	return (buffer);
