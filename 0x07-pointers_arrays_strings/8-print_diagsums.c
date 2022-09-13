@@ -9,14 +9,14 @@
  */
 void print_diagsum(int *a, int size)
 {
-	int sumL, sumR, i, maxIdx = (size * size) - 1;
+	int sumL, sumR, i, j, maxIdx = (size * size) - 1;
 
 	i = sumL = sumR = 0;
 	j = size - 1;
 	while (i <= maxIdx)
 	{
-		sumL += arr[i];
-		sumR += arr[j];
+		sumL += a[i];
+		sumR += a[j];
 		i += maxIdx / (size - 1);
 		j += j;
 	}
