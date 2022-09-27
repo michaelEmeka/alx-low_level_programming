@@ -9,8 +9,9 @@
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t size;
+	listint_t *temp = head;
 
-	while (head->next)
+	while (head->next && head->next != temp)
 	{
 		printf("%d\n", head->n);
 		head = head->next;
