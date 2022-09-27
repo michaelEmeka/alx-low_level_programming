@@ -35,14 +35,14 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		temp = temp->next;
 		maxIdx++;
 	}
-	if (idx > maxIdx)
+	if (index > maxIdx)
 		return (0);
 	temp = *head;
-	if (idx == 0)
+	if (index == 0)
 		*head = temp->next;
 	else
 	{
-		while (idx > 0)
+		while (index > 0)
 		{
 			prev = temp;
 			temp = temp->next;
