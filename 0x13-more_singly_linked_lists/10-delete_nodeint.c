@@ -13,7 +13,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	unsigned int maxIdx = 0;
 
 	temp = *head;
-	while(temp)
+	while (temp)
 	{
 		temp = temp->next;
 		maxIdx++;
