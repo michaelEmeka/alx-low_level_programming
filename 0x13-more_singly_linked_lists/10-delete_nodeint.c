@@ -9,23 +9,6 @@
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	/*unsigned int position = 0;
-	listint_t *temp = *head;
-
-	if (!temp)
-		return (-1);
-	while (position < index)
-	{
-		temp = temp->next;
-		position++;
-		if (!temp)
-			break;
-	}
-	if (!temp)
-		return (-1);
-	*head = temp->next;
-	free(temp);
-	return (1);*/
 	listint_t *prev, *temp;
 	unsigned int maxIdx = 0;
 
@@ -35,8 +18,8 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		temp = temp->next;
 		maxIdx++;
 	}
-	if (index > maxIdx)
-		return (0);
+	if (index > maxIdx || maxIdx == 0)
+		return (-1);
 	temp = *head;
 	if (index == 0)
 		*head = temp->next;
