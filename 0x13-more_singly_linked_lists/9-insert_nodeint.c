@@ -9,9 +9,18 @@
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
+	int maxId = 0;
 	listint_t *prev, *temp, *new;
 
 	temp = *head;
+	while (temp)
+	{
+		temp = temp->next;
+		maxId++;
+	}
+	temp = *head;
+	if (idx > maxId)
+		return (NULL);
 	new = malloc(sizeof(listint_t));
 	if (!new)
 		return (NULL);
@@ -26,14 +35,12 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	}
 	else
 	{
-		while (idx > 0 && prev)
+		while (idx > 0)
 		{
 			prev = temp;
 			temp = temp->next;
 			idx--;
 		}
-		if (!prev)
-			return (NULL);
 		prev->next = new;
 		new->next = temp;
 	}
