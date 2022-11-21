@@ -1,14 +1,7 @@
 #ifndef _HASH_
 #define _HASH_
 
-/**
- * Header files.
- */
 #include <stdlib.h>
-
-/**
- * utils.
- */
 
 /**
  * struct hash_node_s - Node of a hash table
@@ -39,9 +32,6 @@ typedef struct hash_table_s
      hash_node_t **array;
 } hash_table_t;
 
-/**
- * Function prototypes.
- */
 hash_table_t *hash_table_create(unsigned long int size);
 
 #endif
