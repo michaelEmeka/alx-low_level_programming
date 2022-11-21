@@ -1,4 +1,4 @@
-#include "hash.h"
+#include "hash_tables.h"
 
 /**
  * key_index - gives the index of a key using djb2 algorithm.
