@@ -4,7 +4,7 @@
 /**
  * Header files.
  */
-#include <stdlib.h>;
+#include <stdlib.h>
 
 /**
  * utils.
