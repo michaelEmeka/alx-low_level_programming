@@ -4,12 +4,7 @@
 /**
  * Header files.
  */
-#include <stdlib.h>
-
-/**
- * Function prototypes.
- */
-hash_table_t *hash_table_create(unsigned long int size);
+#include <stdlib.h>;
 
 /**
  * utils.
@@ -43,5 +38,10 @@ typedef struct hash_table_s
      unsigned long int size;
      hash_node_t **array;
 } hash_table_t;
+
+/**
+ * Function prototypes.
+ */
+hash_table_t *hash_table_create(unsigned long int size);
 
 #endif
