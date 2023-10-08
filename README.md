@@ -1,1 +1,1 @@
-This repository is created for the inro to C tasks
+This repository is created for the intro to C tasks
